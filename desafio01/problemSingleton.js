@@ -3,7 +3,7 @@ class Config {
     if(Config.instance){
       return Config.instance;
     }
-    this.settings = {};
+    this.settings = [];
     Config.instance = this;
   }
 
