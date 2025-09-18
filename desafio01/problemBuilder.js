@@ -1,4 +1,4 @@
-//TODOclass Lanche {
+class Lanche {
   constructor(pao, carne, queijo, salada, molho) {
     this.pao = pao;
     this.carne = carne;
@@ -54,19 +54,18 @@ class LancheDirector{
     .setCarne()
     .setMolho()
     .setQueijo()
-    .build
+    .build()
   }
   static buildPaoComBerro() {
     return new LancheBuilder()
     .setPao()
-    .build
-    
+    .build()
     }
   }
 
 
-const lancheSimples = LancheDirector.buildPaoComBerro
-const lancheCompleto = LancheDirector.buildLanchepadrao
+const lancheSimples = LancheDirector.buildPaoComBerro()
+const lancheCompleto = LancheDirector.buildLanchepadrao()
 
 lancheSimples.show();
 lancheCompleto.show();
